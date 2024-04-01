@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Підрахувати голосні</title>
+</head>
+<body>
+
+    <h1>Laboratory work #1</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="declension.html">declension</a></li>
+            <li><a href="Vowels.html">Vowels</a></li>
+        </ul>
+    </nav>
+
+<label for="inputString">Введіть рядок:</label>
+<input type="text" id="inputString">
+<button onclick="countAndDisplay()">Підрахувати голосні</button>
+<p id="vowelsCount"></p>
+
+<script>
+function countUkrainianVowels(str) {
+    const ukrainianVowelsRegex = /[аоуиіе]/gi; // Регулярний вираз для українських голосних
+    const vowelsArray = str.match(ukrainianVowelsRegex);
+    if (vowelsArray === null) {
+        return 0;
+    }
+    return vowelsArray.length;
+}
+
+function countAndDisplay() {
+    const inputStringElement = document.getElementById("inputString");
+    const vowelsCountElement = document.getElementById("vowelsCount");
+    const inputString = inputStringElement.value;
+    const vowelsCount = countUkrainianVowels(inputString);
+    vowelsCountElement.textContent = "Кількість голосних літер у рядку: " + vowelsCount;
+}
+</script>
+
+</body>
+</html>

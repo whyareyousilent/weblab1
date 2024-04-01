@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar li {
+    float: left;
+}
+
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navbar li a:hover {
+    background-color: #0dda8b;
+    color: black;
+}
+
+
+#operator_btns {
+    margin-top: 20px;
+}
+
+
+.operator {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+
+#result {
+    font-size: 24px;
+    margin-top: 20
+    
+}
+
+.container{
+    margin: 2rem;
+    padding: 1rem;
+    background-color: coral;
+    border-radius: 0.5rem;
+}
+
+button{
+    padding: 0.5rem 0.75rem;
+    background-color: aquamarine;
+    border-radius: 0.25rem;
+    border: transparent;
+    margin-left: 2rem;
+    cursor: pointer;
+    
+}
+
+label{
+    margin-left: 2rem;
+}
